@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right bottom, #151b25, #52688f);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 1vw;
+}
+
+body::-webkit-scrollbar-track {
+    background: grey;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+.PT p {
+    text-align: justify;
+    font-size: 4vh;
+    padding: 3vw;
+    margin-bottom: 7%;
+}
+
+.location-roxo {
+    width: auto;
+    height: 9vh;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: -3%;
+}
+
+.banner_img {
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 12% 50%, 0% 0%);
+    height: 33vh;
+    width: 80vw;
+    object-fit: cover;
+}
+
+.banner h1,
+.text-exp {
+    font-family: "Bebas Neue", sans-serif;
+    color: #CDB4FF;
+    font-size: 10vh;
+    margin-left: 2vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+.parent,
+.parent1,
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(5, 16vw);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 3vw;
+    padding: 3vw;
+    justify-content: center;
+    padding: 2vh;
+    grid-row-gap: 0px;
+}
+
+.parent {
+    margin-bottom: -45%;
+}
+
+.parent1 {
+    margin-bottom: -49%;
+}
+
+.parent2 {
+    margin-bottom: -50%;
+}
+
+.parent_img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 16vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.parent h1,
+.parent1 h1,
+.parent2 h1 {
+    text-align: left;
+    margin-bottom: -2vh;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 3.5vh;
+    margin-left: .5vw;
+    color: #FFF;
+    font-weight: 100;
+}
+
+.local {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1vh;
+}
+
+.local_img {
+    width: 2vw;
+    margin-left: 1vw;
+}
+
+.local h1 {
+    color: rgb(163, 163, 163);
+    font-size: 2.7vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+p {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    padding: 1vw;
+    font-weight: 530;
+    margin-bottom: -2vh;
+    color: #FFF;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.div4 {
+    grid-area: 1 / 4 / 3 / 5;
+}
+
+.div5 {
+    grid-area: 1 / 5 / 3 / 6;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
+.text-exp {
+    text-align: center;
+}
+
+iframe {
+    width: 85vw;
+    height: 80vh;
+    border-radius: 20px;
+}
+
+.ad {
+    display: flex;
+    background-color: #e0e5ec;
+    margin-bottom: 1vh;
+    justify-self: center;
+    width: 70vw;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #0d1b2a;
+    margin-bottom: 8%;
+}
+
+.ad img {
+    clip-path: polygon(0 0, 100% 0%, 71% 100%, 0% 100%);
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.ad-right h1 {
+    color: black;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    margin-left: 2vw;
+    font-size: 5vh;
+
+}
+
+.ad-right p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black;
+    font-size: 5vh;
+    font-weight: 400;
+}
+
+.branco {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.azul {
+    color: blue;
+    text-shadow: 2px 2px 3px black;
+}
+
+.vermelho {
+    color: red;
+    text-shadow: 2px 2px 3px black;
+}
+
+a {
+    padding: 1vw;
+    border-radius: 30px;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    margin-left: 20%;
+}
+
+a:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+a:active {
+    box-shadow: inset 5px 5px 10px #a3b1c6, -5px -5px 10px #fff;
+}

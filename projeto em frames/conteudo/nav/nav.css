@@ -1,0 +1,49 @@
+body {
+    background: #2E2E2E;
+    margin: 0;
+    padding: 0;
+}
+.links {
+    margin-top: 5vh;
+}
+
+.links a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 7vw;
+    max-width: 80vw;
+    transition: 0.3s;
+    border-radius: 5vw;
+    padding-right: 6vw;
+    margin-left: 7vw;
+    
+}
+
+
+
+.links img {
+    max-width: 100%;
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+hr {
+    width: 85vw;
+    border: 1px solid grey;
+    animation-duration: 2s;
+    animation: fadeIn;
+}
+
+
+.links a:hover {
+    background: grey;
+    transform: scale(1.03);
+}
+

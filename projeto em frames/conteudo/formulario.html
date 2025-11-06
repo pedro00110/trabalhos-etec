@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <div class="form">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <form action="">
+                <div class=".ca">
+                    <div class="cad">
+                        <label for="cad"><strong>Informações Pessoais</strong></label><br><br>
+                        <div class="input-text">
+                            <label for="email">Nome</label><br>
+                            <input type="text" name="nome" id="nome" class="inputEmail" placeholder="Digite seu nome"
+                                required><br>
+                            <label for="Sobrenome">Sobrenome</label><br>
+                            <input type="text" name="sobrenome" id="sobrenome" class="sobrenome"
+                                placeholder="Digite seu sobrenome" required><br>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="inputEmail"
+                                placeholder="exemplo@gmail.com" required><br>
+                            <label for="password">Senha</label>
+                            <input type="password" name="senha" id="senha" placeholder="Crie uma senha" required><br>
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+                        </div>
+                    </div>
+                    <label>Sexo</label><br>
+                    <div class="sexo">
+                        <input type="radio" name="sexo" id="masculino" value="M" class="sexo" checked>
+                        <label for="masculino">Masculino</label><br>
+                        <input type="radio" name="sexo" id="feminino" value="F" class="sexo">
+                        <label for="feminino">Feminino</label><br>
+                        <input type="radio" name="sexo" id="outro" value="O" class="sexo">
+                        <label for="outro">Outro</label><br><br>
+                    </div>
+                    <div class="data">
+                        <label for="data_nasc">Data de nascimento</label>
+                        <input type="date" name="data_nasc" id="data_nasc"><br>
+                    </div>
+
+                    <label for="pais">País de residência &nbsp;&nbsp;&nbsp;</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecione seu país</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="eua">Estados Unidos</option>
+                        <option value="portugal">Portugal</option>
+                    </select>
+                    <br><br>
+
+                    <label for="cidade">Cidade de residência</label>
+                    <select id="cidade" name="cidade" required>
+                        <option value="">Selecione sua cidade</option>
+                        <option value="sao_paulo">São Paulo</option>
+                        <option value="rio">Rio de Janeiro</option>
+                        <option value="salvador">Salvador</option>
+                        <option value="lisboa">Lisboa</option>
+                        <option value="nova_york">Nova York</option>
+                    </select>
+                    <br><br>
+
+                    <hr><br>
+
+                    <div class="preferencias">
+                        <p><strong>Preferências de viagem</strong></p>
+                        <input type="radio" id="praia" name="preferencia" value="praia">
+                        <label for="praia">Praia</label><br>
+
+                        <input type="radio" id="montanha" name="preferencia" value="montanha">
+                        <label for="montanha">Montanha</label><br>
+
+                        <input type="radio" id="aventura" name="preferencia" value="aventura">
+                        <label for="aventura">Aventura</label><br>
+
+                        <input type="radio" id="cultural" name="preferencia" value="cultural">
+                        <label for="cultural">Cultural</label><br>
+
+                        <input type="radio" id="luxo" name="preferencia" value="luxo">
+                        <label for="luxo">Luxo</label><br>
+
+                        <input type="radio" id="economico" name="preferencia" value="economico">
+                        <label for="economico">Econômico</label><br><br>
+                    </div>
+
+                    <hr><br>
+
+                    <p><strong>Interesses específicos</strong></p>
+                    <input type="checkbox" id="gastronomia" name="interesses" value="gastronomia">
+                    <label for="gastronomia">Gastronomia</label><br>
+
+                    <input type="checkbox" id="trilhas" name="interesses" value="trilhas">
+                    <label for="trilhas">Trilhas</label><br>
+
+                    <input type="checkbox" id="resorts" name="interesses" value="resorts">
+                    <label for="resorts">Resorts</label><br>
+
+                    <input type="checkbox" id="cruzeiros" name="interesses" value="cruzeiros">
+                    <label for="cruzeiros">Cruzeiros</label><br><br>
+
+                    <hr><br>
+
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceito os termos e condições ✅</label><br>
+
+                    <input type="checkbox" id="privacidade" name="privacidade" required>
+                    <label for="privacidade">Aceito a política de privacidade 🔒</label><br>
+
+                    <input type="checkbox" name="verification" id="verification">
+                    <label for="verification">Sou humano</label><br>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

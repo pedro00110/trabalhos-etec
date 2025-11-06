@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right top, #151b25, #384d72, #5c7fae);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 1vw;
+}
+
+body::-webkit-scrollbar-track {
+    background: grey;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+.HT p {
+    text-align: justify;
+    font-size: 4vh;
+    padding: 3vw;
+    margin-bottom: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    color: #FFF;
+    text-shadow: 1px 1px 2px black;
+}
+.icone-roxo {
+    width: auto;
+    height: 13vh;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-top: 3vh;
+    margin-bottom: -3vh;
+}
+.banner_img {
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 12% 50%, 0% 0%);
+    height: 33vh;
+    width: 77vw;
+    object-fit: cover;
+}
+.banner h1 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #CDB4FF;
+    font-size: 10vh;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.banner h1 {
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+.hotel, .hotel-r {
+    display: flex;
+    justify-self: center;
+    gap: 2%;
+    background-color: transparent;
+    height: 60vh;
+    width: 85%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    color: white;
+}
+.hotel img {
+    border-radius: 10px;
+    
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 30vw;
+    height: auto;
+}
+.hotel-r img {
+    border-radius: 10px;
+    
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 30vw;
+    height: auto;
+}
+
+.info, .info-l {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7vh;
+    text-shadow: 1px 1px 2px black;
+}
+.info img, .info-l img {
+    width: auto;
+    height: 3vh;
+    aspect-ratio: 1 / 1;
+}
+span {
+    color: green;
+}
+.nome {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 5vh;
+    text-shadow: 2px 2px 3px black;
+    font-weight: 100;
+}

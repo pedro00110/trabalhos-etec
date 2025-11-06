@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right bottom, #2E3B4E, #3A3A3A);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 1vw;
+}
+
+body::-webkit-scrollbar-track {
+  background: grey;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+.apre {
+  
+  padding: 10vh;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 3vh;
+}
+
+.moscow {
+  display: flex;
+  align-items: center;
+  font-family: "Archivo Black", sans-serif;
+  color: transparent;
+  justify-content: center;
+  font-size: 5vw;
+  position: relative;
+  top: -88vh;
+  gap: 8.5vw;
+  -webkit-text-stroke-width: .3vw;
+  -webkit-text-stroke-color: white;
+  animation: aparecer 1s forwards;
+  animation-delay: 3s;
+  opacity: 0;
+  animation-duration: 2s;
+  margin-bottom: -29%;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+.fotos video {
+  aspect-ratio: 9 / 16;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  width: 16vw;
+}
+
+.fotos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55vw;
+  animation: fadeInDown ease-out;
+  animation-duration: 2s;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+.sub {
+  display: flex;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+p {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    padding: 3vw;
+    font-weight: 530;
+    margin-bottom: vh;
+    color: #FFF;
+}
+.text {
+    font-family: "Bebas Neue", sans-serif;
+    color: #CDB4FF;
+    font-size: 10vh;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10vh;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10vw;
+  justify-self: center;
+  margin-bottom: 15vh;
+}
+
+.nav_item {
+  position: relative;
+  width: 20vw;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.nav_img {
+  aspect-ratio: 9 / 13;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: .3s;
+  border-radius: 20px;
+  display: block;
+}
+
+.nav_item:hover .nav_img {
+  transform: scale(1.1);
+  filter: blur(2px);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 6vh;
+  font-weight: 100;
+  text-shadow: 2px 2px 2px black;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+  pointer-events: none;
+}
+
+.nav_item:hover .overlay {
+  opacity: 1;
+}
